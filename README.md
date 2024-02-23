@@ -27,7 +27,14 @@ The EnemyMovement class contains logic for the eneme object's patrolling and cha
 ### Enemy Attack
 Enemies are able to attack the player in two ways, melee and ranged, depending on their variant. The EnemyAttack class is an abstract class mainly containing logic to check if a player is within an enemy's attack range. The melee enemy's attack actions are in the **EnemyMelee** child class. The ranged enemy's attack action are in the **EnemeyRange** child class.
 ## Objects
-
+### Checkpoint
+Checkpoints are activated by the player when passing through them. Checkpoints serve as respawn points when the player runs out of health. Players have to collect all checkpoints to be able to use the goal and continue to the next level.
+### Goal
+The GOal object moves the player onto the next level when all checkpoints are collected.
+### Heal Fruit
+The heal fruit is a collectible that heals the player for 1 hitpoint.
+### Fan
+Fans are eviromental objects that push the player upwards.
 ## Traps
 
 ## Other Systems
