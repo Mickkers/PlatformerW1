@@ -36,5 +36,11 @@ The heal fruit is a collectible that heals the player for 1 hitpoint.
 ### Fan
 Fans are eviromental objects that push the player upwards.
 ## Traps
-
+All traps damage the player through the DamagePlayer class, if a trap uses an additional class it is only to regulate the traps behaviour of when it can damage the player.
+### Spikes
+Spikes are set on the ground and damage the player if touched by the player.
+### Saw
+Saws move back and forth within a predefined area.
+### Fire Trap
+The firetrap damages the enemy when it is on, it has downtime and startup time before it can damage the player.
 ## Other Systems
