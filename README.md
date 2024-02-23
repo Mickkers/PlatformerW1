@@ -19,7 +19,13 @@ The PlayerAttack class is responsible for finding an available fireball from the
 ### Player Respawn
 The PlayerRespawn class is responsible for resetting the player's attributes and position to the last collected checkpoint when the player is out of health and respawns.
 ## Enemy
-
+Enemies have health and patrol a predefined area, they chase the player if the player is within the patrol area. Enemies attack the player if the player is inside the attack range.
+### Enemy Health
+The EnemyHealth class contains an enemy object's health attributes and death sequence.
+### Enemy Movement
+The EnemyMovement class contains logic for the eneme object's patrolling and chasing behvaiours.
+### Enemy Attack
+Enemies are able to attack the player in two ways, melee and ranged, depending on their variant. The EnemyAttack class is an abstract class mainly containing logic to check if a player is within an enemy's attack range. The melee enemy's attack actions are in the **EnemyMelee** child class. The ranged enemy's attack action are in the **EnemeyRange** child class.
 ## Objects
 
 ## Traps
