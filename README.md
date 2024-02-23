@@ -44,3 +44,13 @@ Saws move back and forth within a predefined area.
 ### Fire Trap
 The firetrap damages the enemy when it is on, it has downtime and startup time before it can damage the player.
 ## Other Systems
+### Game Manager
+The GameManager class manages amount of respawns left & triggers the gameover state when out of respawns, and the player's progress in collecting checkpoints.
+### Audio System
+The game's background music and sound effects are controlled by the **AudioController** class, when a sound effect is needed an object can call for it through the audio controller class. 
+<br>
+Sound settings are handled by the **SoundSettings** class.
+### User Interface
+Different user interfaces use different classes (i.e. MainMenuUI, GameplayUI, etc.), during gameplay, the UIManager class is used to transition between the gameplay UI, pause UI, and gameover UI.
+### Projectiles
+Projectiles used by the player (fireballs) and enemies (spikeballs) are both derived from an abstract class Projectile. The PlayerProjeectile and EnemyProjectile child class is used to regulate the projectiles behaviour on collision with a target.
